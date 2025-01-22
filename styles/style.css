@@ -143,6 +143,11 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
+.title-3{
+  text-align: center;
+  font-size:3rem ;
+  font-weight: bold;
+}
 .Curriculum{
   max-width: 1160px;
   max-height: 481px;
@@ -205,6 +210,21 @@
   font-weight: bold;
 }
 
+/* story design */
+.stories{
+  display: flex;
+  margin: 0 auto;
+}
+.story-list{
+  max-width: 601px;
+  max-height: 622px;
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+}
+.story-list-1{
+  max-width: 540px;
+  max-height:630px;
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar, .nav-links,
@@ -220,5 +240,7 @@
   .banner{
     flex-direction: column-reverse;
   }
-}
+  
+  }
+
 
