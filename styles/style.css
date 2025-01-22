@@ -8,7 +8,6 @@
   font-weight: 400;
   font-style: normal;
 
-  
 }
 
 /* sheared styles  */
@@ -39,8 +38,12 @@
 
 /* banner styles */
 .banner{
-  justify-content: space-around;
+  gap: 50px;
+  
  
+}
+.banner-image{
+  /* width: 100%; */
 }
 .banner-content{
   max-width: 640px;
@@ -65,6 +68,16 @@
 .color4{
   color: #5D58EF;
 }
+.color5{
+  color: #64C8FF;
+}
+.color6{
+  color: #F0AA00;
+
+}
+.color7{
+  color:#8700FF;
+}
 /* button styles */
 .btn-1{
   font-size: 1.25rem;
@@ -88,6 +101,41 @@
   height: 50px;
   width: 197px;
   
+}
+
+/* main style */
+.title-2{
+  text-align: center;
+}
+.Curriculum{
+  width: 1160px;
+  height: 481px;
+  border-radius: 18px;
+  display: flex;
+  /* grid-template-rows: repeat(3, 1fr); */
+  justify-content: space-around;
+  
+}
+.kinder{
+  width: 367px;
+  height: 476px;
+  border-radius: 1.25rem;
+  background-image: linear-gradient(#DEF5FF,#FFFFFF);
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.elementary{
+  width: 367px;
+  height: 481px;
+  border-radius: 1.25rem;
+  background-color: #FFF4DC;
+}
+.middle{
+  width: 367px;
+  height: 476px;
+  border-radius: 1.25rem;
+  background-color: #F2E8FF;
 }
 
 
