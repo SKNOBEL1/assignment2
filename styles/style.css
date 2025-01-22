@@ -40,16 +40,26 @@
 .banner{
   gap: 50px;
   
+  /* flex-direction: column-reverse; */
+ 
+  
  
 }
 .banner-image{
   /* width: 100%; */
 }
 .banner-content{
-  max-width: 640px;
+  max-width: 700px;
   max-height: 331px;
   
-  
+}
+.banner-title{
+  font-size: 56px;
+  font-weight: bold;
+}
+.banner-description{
+  font-size: 1.25;
+  font-weight: 400;
 }
 /* .banner-image{
   width: 100%;
@@ -60,7 +70,7 @@
   color: Orange;
 }
 .color2{
-  color: Sky Blue;
+  color: #01ACFD;
 }
 .color3{
   color: #05D4DF;
@@ -93,7 +103,7 @@
 }
 .btn-2{
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: bold;
   border-radius: 12px;
   background-color: black;
   color: #FFFFFF;
@@ -102,18 +112,46 @@
   width: 197px;
   
 }
-
+/* .btn-3{
+  width: 60px;
+  height: 60px;
+  border-radius: 2rem;
+  background-color: orange;
+  color: #FFFFFF;
+  border: none;
+  font-size: solid;
+}
+.btn-4{
+  width: 60px;
+  height: 60px;
+  border-radius: 2rem;
+  background-color: orange;
+  color: #FFFFFF;
+  border: none; 
+  font-size: solid;
+  
+} 
+ .btn-section{
+  justify-content: center;
+  margin-top: 5rem;
+} */
 /* main style */
 .title-2{
   text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .Curriculum{
-  width: 1160px;
-  height: 481px;
-  border-radius: 18px;
+  max-width: 1160px;
+  max-height: 481px;
+  border-radius: 1.25rem;
   display: flex;
-  /* grid-template-rows: repeat(3, 1fr); */
+  margin: 0 auto;
   justify-content: space-around;
+  padding-top: 120px;
+  padding-bottom: 120px;
   
 }
 .kinder{
@@ -123,29 +161,64 @@
   background-image: linear-gradient(#DEF5FF,#FFFFFF);
   margin: 0 auto;
   text-align: center;
+  box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
   
+
 }
 .elementary{
   width: 367px;
   height: 481px;
   border-radius: 1.25rem;
-  background-color: #FFF4DC;
+  text-align: center;
+  margin: 0 auto;
+  background-image: linear-gradient(#FFF4DC,#FFFFFF);
+  box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+
 }
 .middle{
   width: 367px;
   height: 476px;
   border-radius: 1.25rem;
-  background-color: #F2E8FF;
-}
+  text-align: center;
+  margin: 0 auto;
+  background-image: linear-gradient(#F2E8FF,#FFFFFF);
+  box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
 
+}
+.fact-icon{
+  margin-top: 52px;
+}
+.fact-name{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 32 px;
+}
+.fact-description{
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 34px;
+  margin-bottom: 34px;
+
+}
+.fact-last{
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar, .nav-links,
   .banner,
-  .banner-content{
+  .banner-content,
+  .Curriculum,
+  .btn-section{
     flex-direction: column;
   }
-  
+  .Curriculum{
+    margin-bottom: 50px;
+  }
+  .banner{
+    flex-direction: column-reverse;
+  }
 }
 
