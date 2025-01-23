@@ -9,10 +9,7 @@
   font-style: normal;
 
 }
-/* #body{
-  background-image: url(assets/bg.png);
-  background-image:linear-gradient(#FFFFFF,rgba(254, 163, 1, 0.3)) ;
-} */
+
 
 /* sheared styles  */
 .display-flex{
@@ -142,6 +139,20 @@
   justify-content: center;
   margin-top: 5rem;
 } */
+ .btn-5{
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 12px;
+  background-color: black;
+  color: #FFFFFF;
+  padding: 10px 10px;
+  height: 50px;
+  width: 197px;
+ }
+ .for-btn{
+  justify-content: center;
+  background-color:  rgba(254, 163, 1, 0.3);;
+ }
 /* main style */
 .title-2{
   text-align: center;
@@ -154,7 +165,7 @@
   text-align: center;
   font-size:3rem ;
   font-weight: bold;
-  background-color: rgba(254, 163, 1, 0.3);
+  
 }
 .Curriculum{
   max-width: 1160px;
@@ -220,30 +231,35 @@
 
 /* story design */
 .stories{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  background-image: url(../assets/bg.png);
+  display: flex;
+  
+  /* background-image: url(../assets/bg.png); */
   background-color: rgba(254, 163, 1, 0.3);
   align-items: center;
   width: 100%;
-
+  justify-content: center;
+ gap: 20px;
+ height: 630px;
 }
 .story-list{
-  max-width: 601px;
+  
   /* max-height: 622px; */
   display: grid;
-  grid-template-columns: repeat(2,2fr);
-  background-color: #FFFFFF;
+  grid-template-columns: repeat(2,1fr);
+  /* background-color: #FFFFFF; */
+  gap: 50px;
 
   
 }
 .story-list-1{
   max-width: 540px;
-  max-height:630px;
+  /* max-height:630px; */
   border-radius: 1rem;
+  background-color: #FFFFFF;
  
 }
 .story-part-2{
+  max-width: 290px;
   background-color: #FFFFFF;
   border-radius: 16px;
   
@@ -251,14 +267,17 @@
 .story-part-3{
   background-color: #FFFFFF;
   border-radius: 16px;
+  max-width: 290px;
 }
 .story-part-4{
   background-color: #FFFFFF;
   border-radius: 16px;
+  max-width: 290px;
 }
 .story-part-5{
   background-color: #FFFFFF;
   border-radius: 16px;
+  max-width: 290px;
 }
 
 /* footer design */
@@ -289,6 +308,12 @@
   font-size: 1.25rem;
   font-weight: 500;
 }
+.bold{
+  font-weight:bold ;
+}
+.border{
+  border-radius: 16px;
+}
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
@@ -310,6 +335,30 @@
   }
   .story-list-1{
     display: none;
+  }
+  .story-list{
+    width: 358px;
+    height: 372px;
+  }
+  .story-part-2{
+    width: o auto;
+    height: 179px;
+    margin: 12px;
+  }
+  .story-part-3{
+    width: 0 auto;
+    height: 179px;
+    margin: 12px;
+  }
+  .story-part-4{
+    width: 0 auto;
+    height: 179px;
+    margin: 12px;
+  }
+  .story-part-5{
+    width: 0 auto;
+    height: 179px;
+    margin: 12px;
   }
   
   }
