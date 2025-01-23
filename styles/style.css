@@ -22,7 +22,9 @@
   align-items: center;
 }
 
-  
+/* .nav-school{
+  margin: 0;
+} */
 .nav-item{
   list-style: none;
   margin-right: 30px;
@@ -40,11 +42,9 @@
 /* banner styles */
 .banner{
   gap: 50px;
-  align-items: center;
+  justify-content: center;
   
   /* flex-direction: column-reverse; */
- 
-  
  
 }
 .banner-image{
@@ -116,7 +116,7 @@
   width: 197px;
   
 }
-/* .btn-3{
+.btn-3{
   width: 60px;
   height: 60px;
   border-radius: 2rem;
@@ -136,9 +136,10 @@
   
 } 
  .btn-section{
+  display: flex;
   justify-content: center;
-  margin-top: 5rem;
-} */
+  
+}
  .btn-5{
   font-size: 1.25rem;
   font-weight: bold;
@@ -148,11 +149,15 @@
   padding: 10px 10px;
   height: 50px;
   width: 197px;
+  margin-left: 850px;
  }
  .for-btn{
   justify-content: center;
   background-color:  rgba(254, 163, 1, 0.3);;
  }
+ /* .bar{
+  display: none;
+ } */
 /* main style */
 .title-2{
   text-align: center;
@@ -174,8 +179,8 @@
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 80px;
   
 }
 .kinder{
@@ -231,10 +236,17 @@
 
 /* story design */
 .stories{
-  display: flex;
+ 
   
   /* background-image: url(../assets/bg.png); */
   background-color: rgba(254, 163, 1, 0.3);
+  
+}
+.stories-grid{
+  display: flex;
+  
+  /* background-image: url(../assets/bg.png); */
+  
   align-items: center;
   width: 100%;
   justify-content: center;
@@ -284,7 +296,7 @@
 .foot{
   background-color: #01ACFD;
   width: 100%;
-  height: 519px;
+  
   text-align:center ;
   color: #FFFFFF;
 }
@@ -304,6 +316,9 @@
   font-weight:bold ;
 
 }
+/* .logo-color{
+  fill: #FFFFFF;
+} */
 .pizza{
   font-size: 1.25rem;
   font-weight: 500;
@@ -323,15 +338,33 @@
   .Curriculum,
   .btn-section{
     flex-direction: column;
+    
   }
   
   .banner{
     flex-direction: column-reverse;
   }
+  /* .bar{
+     display: flex;
+     justify-content: space-between;
+  }
+  .ham{
+    display: none; */
+  
+  .title-2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .title-3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .Curriculum{
-   max-width: 357px;
+   /* max-width: 357px; */
    /* max-height: 991px; */
    gap: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
   }
   .story-list-1{
     display: none;
@@ -340,27 +373,28 @@
     width: 358px;
     height: 372px;
   }
-  .story-part-2{
-    width: o auto;
+  .story-part-2, 
+  .story-part-3,
+  .story-part-4,
+  .story-part-5
+  {
+    width: 173px;
     height: 179px;
     margin: 12px;
+    background-color: #FFFFFF;
   }
-  .story-part-3{
-    width: 0 auto;
-    height: 179px;
-    margin: 12px;
+ 
+  .foot-line{
+    display: inline;
+    
   }
-  .story-part-4{
-    width: 0 auto;
-    height: 179px;
-    margin: 12px;
+  .btn-5{
+    margin: auto;
   }
-  .story-part-5{
-    width: 0 auto;
-    height: 179px;
-    margin: 12px;
+  .btn-3, .btn-4{
+    display: none;
   }
   
-  }
+}
 
 
