@@ -9,6 +9,10 @@
   font-style: normal;
 
 }
+/* #body{
+  background-image: url(assets/bg.png);
+  background-image:linear-gradient(#FFFFFF,rgba(254, 163, 1, 0.3)) ;
+} */
 
 /* sheared styles  */
 .display-flex{
@@ -39,6 +43,7 @@
 /* banner styles */
 .banner{
   gap: 50px;
+  align-items: center;
   
   /* flex-direction: column-reverse; */
  
@@ -50,7 +55,7 @@
 }
 .banner-content{
   max-width: 700px;
-  max-height: 331px;
+  /* max-height: 331px; */
   
 }
 .banner-title{
@@ -88,6 +93,8 @@
 .color7{
   color:#8700FF;
 }
+
+
 /* button styles */
 .btn-1{
   font-size: 1.25rem;
@@ -147,10 +154,11 @@
   text-align: center;
   font-size:3rem ;
   font-weight: bold;
+  background-color: rgba(254, 163, 1, 0.3);
 }
 .Curriculum{
   max-width: 1160px;
-  max-height: 481px;
+  /* max-height: 481px; */
   border-radius: 1.25rem;
   display: flex;
   margin: 0 auto;
@@ -161,7 +169,7 @@
 }
 .kinder{
   width: 367px;
-  height: 476px;
+  /* height: 476px; */
   border-radius: 1.25rem;
   background-image: linear-gradient(#DEF5FF,#FFFFFF);
   margin: 0 auto;
@@ -172,7 +180,7 @@
 }
 .elementary{
   width: 367px;
-  height: 481px;
+  /* height: 481px; */
   border-radius: 1.25rem;
   text-align: center;
   margin: 0 auto;
@@ -182,7 +190,7 @@
 }
 .middle{
   width: 367px;
-  height: 476px;
+  /* height: 476px; */
   border-radius: 1.25rem;
   text-align: center;
   margin: 0 auto;
@@ -212,19 +220,76 @@
 
 /* story design */
 .stories{
-  display: flex;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-image: url(../assets/bg.png);
+  background-color: rgba(254, 163, 1, 0.3);
+  align-items: center;
+  width: 100%;
+
 }
 .story-list{
   max-width: 601px;
-  max-height: 622px;
+  /* max-height: 622px; */
   display: grid;
   grid-template-columns: repeat(2,2fr);
+  background-color: #FFFFFF;
+
+  
 }
 .story-list-1{
   max-width: 540px;
   max-height:630px;
+  border-radius: 1rem;
+ 
 }
+.story-part-2{
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  
+}
+.story-part-3{
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+.story-part-4{
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+.story-part-5{
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+/* footer design */
+.foot{
+  background-color: #01ACFD;
+  width: 100%;
+  height: 519px;
+  text-align:center ;
+  color: #FFFFFF;
+}
+.foot-line{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1071px; 
+  /* height: 222px;; */
+  margin: auto;
+
+}
+.logo{
+  display: flex;
+}
+.kids{
+  font-size:2.75rem;
+  font-weight:bold ;
+
+}
+.pizza{
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar, .nav-links,
@@ -234,11 +299,17 @@
   .btn-section{
     flex-direction: column;
   }
-  .Curriculum{
-    margin-bottom: 50px;
-  }
+  
   .banner{
     flex-direction: column-reverse;
+  }
+  .Curriculum{
+   max-width: 357px;
+   /* max-height: 991px; */
+   gap: 20px;
+  }
+  .story-list-1{
+    display: none;
   }
   
   }
